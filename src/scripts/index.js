@@ -1,7 +1,4 @@
-const calcButton = document.querySelector("#calculate")
-
-calcButton.addEventListener("click", (ev) => {
-    ev.preventDefault()
+function calculate() {
 
     const men = Number(document.querySelector("#men").value)
     const women = Number(document.querySelector("#women").value)
@@ -16,7 +13,7 @@ calcButton.addEventListener("click", (ev) => {
     let soda
 
     if (men == 0 && women == 0 && children == 0) {
-        result.innerHTML = `<p>Por favor, insira valores válidos.</p>`
+        result.innerHTML = `<p>A quantidade de homens ou mulheres precisa ser maior que 1.</p>`
         return
     }
 
@@ -46,13 +43,14 @@ calcButton.addEventListener("click", (ev) => {
 
     result.innerHTML = `
     <ul>
-      <li><span>${meat.toFixed(1)}kg</span> de carne bovina,</li>
-      <li><span>${chicken.toFixed(1)}kg</span> de frango,</li>
-      <li><span>${sausage.toFixed(1)}kg</span> de linguiça,</li>
-      <li><span>${soda.toFixed(1)}L</span> de refrigerante,</li>
-      <li><span>${beer.toFixed(1)}L</span> de cerveja.</li>
+      <li><span>${meat.toFixed(2)}kg</span> de carne bovina,</li>
+      <li><span>${chicken.toFixed(2)}kg</span> de frango,</li>
+      <li><span>${sausage.toFixed(2)}kg</span> de linguiça,</li>
+      <li><span>${soda.toFixed(2)}L</span> de refrigerante,</li>
+      <li><span>${beer.toFixed(2)}L</span> de cerveja.</li>
     </ul>
   `
     footerMsg.style.visibility = "visible"
     return
-})
+}
+
