@@ -8,7 +8,7 @@
 /* ------------ Header ------------ */
 header div {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     background-color: #aa1a1a;
     color: white;
@@ -17,6 +17,7 @@ header div {
 
 .headerImg {
     width: 10rem;
+    padding-right: 4rem;
 }
 
 .title {
@@ -36,20 +37,20 @@ main div h3 {
     padding: 2rem 0;
 }
 
-main form {
+.form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main form input {
+.form input {
     margin: 10px 0;
     padding: 3px 5px;
     max-width: 9rem;
     border: 1px solid #ccc;
 }
 
-main form button {
+.form button {
     margin: 15px 0;
     padding: 10px 20px;
     background-color: #aa1a1a;
@@ -60,12 +61,12 @@ main form button {
     transition: 0.4s;
 }
 
-main form button:hover {
+.form button:hover {
     background-color: #131f85;
 }
 
-main form label,
-main form input {
+.form label,
+.form input {
     font-size: 18px;
 }
 
