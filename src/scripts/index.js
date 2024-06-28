@@ -1,5 +1,4 @@
 function calculate() {
-
     const men = Number(document.querySelector("#men").value)
     const women = Number(document.querySelector("#women").value)
     const children = Number(document.querySelector("#children").value)
@@ -43,14 +42,13 @@ function calculate() {
 
     result.innerHTML = `
     <ul>
-      <li><span>${meat.toFixed(2)}kg</span> de carne bovina,</li>
-      <li><span>${chicken.toFixed(2)}kg</span> de frango,</li>
-      <li><span>${sausage.toFixed(2)}kg</span> de linguiça,</li>
-      <li><span>${soda.toFixed(2)}L</span> de refrigerante,</li>
-      <li><span>${beer.toFixed(2)}L</span> de cerveja.</li>
+      <li><span>${meat.toFixed(3)}kg</span> de carne bovina,</li>
+      <li><span>${chicken.toFixed(3)}kg</span> de frango,</li>
+      <li><span>${sausage.toFixed(3)}kg</span> de linguiça,</li>
+      <li><span>${soda.toFixed(3)}L</span> de refrigerante,</li>
+      <li><span>${beer.toFixed(3)}L</span> de cerveja.</li>
     </ul>
   `
     footerMsg.style.visibility = "visible"
     return
 }
-
