@@ -5,16 +5,16 @@ function calculate() {
     const result = document.querySelector("#result")
     const footerMsg = document.querySelector("#footer")
 
-    let meat
-    let chicken
-    let sausage
-    let beer
-    let soda
-
-    if (men == 0 && women == 0 && children == 0) {
+    if ((men === 0 && women === 0) || (men === 0 && women === 0 && children > 0)) {
         result.innerHTML = `<p>A quantidade de homens ou mulheres precisa ser maior que 1.</p>`
         return
     }
+
+    let meat = 0
+    let chicken = 0
+    let sausage = 0
+    let beer = 0
+    let soda = 0
 
     if (men > 0) {
         meat = 0.5 * men
