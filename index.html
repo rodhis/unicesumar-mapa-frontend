@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculadora de Quantidades para Churrascos</title>
+
+        <link rel="stylesheet" href="/src/assets/styles/style.css" />
+        <link rel="shortcut icon" href="/src/assets/images/favicon.png" type="image/x-icon" />
+        <script src="src/scripts/index.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <img class="headerImg" src="/src/assets/images/bbq.gif" alt="barbeque gif" />
+                <h1 class="title">Calculadora de Quantidades para Churrascos</h1>
+            </div>
+        </header>
+
+        <main>
+            <div>
+                <h3>Insira aqui a quantidade de pessoas que irão frequentar o seu churrasco:</h3>
+                <form id="form">
+                    <div>
+                        <label for="men">Homens:</label>
+                        <input type="number" id="men" name="men" min="0" value="0" />
+                    </div>
+                    <div>
+                        <label for="women">Mulheres:</label>
+                        <input type="number" id="women" name="women" min="0" value="0" />
+                    </div>
+                    <div>
+                        <label for="children">Crianças:</label>
+                        <input type="number" id="children" name="children" min="0" value="0" />
+                    </div>
+                    <div>
+                        <button type="submit" id="calculate">Calcular</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="result">
+                <h2>Resultado</h2>
+                <p>Quantidade de itens a serem comprados:</p>
+                <div id="result">
+                    <p>As quantidades apareção aqui após clicar em "Calcular"</p>
+                </div>
+            </div>
+        </main>
+
+        <footer id="footer">Bom apetite!</footer>
+    </body>
+</html>

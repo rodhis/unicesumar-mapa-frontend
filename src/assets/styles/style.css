@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+        sans-serif;
+}
+
+/* ------------ Header ------------ */
+header div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #aa1a1a;
+    color: white;
+    padding: 20px 0;
+}
+
+.headerImg {
+    width: 10rem;
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+/* ------------ Main ------------ */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+main div h3 {
+    padding: 2rem 0;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main form input {
+    margin: 10px 0;
+    padding: 3px 5px;
+    max-width: 9rem;
+    border: 1px solid #ccc;
+}
+
+main form button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    background-color: #aa1a1a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+main form button:hover {
+    background-color: #131f85;
+}
+
+main form label,
+main form input {
+    font-size: 18px;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.result > p {
+    padding: 15px 0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#result {
+    margin: 10px 0;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#result ul {
+    list-style: none;
+}
+
+#result span {
+    font-weight: bold;
+}
+
+/* ------------ Footer ------------ */
+footer {
+    visibility: hidden;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #aa1a1a;
+    color: white;
+}
